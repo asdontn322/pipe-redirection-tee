@@ -1,0 +1,36 @@
+[pioneer@localhost ]$ ls | head -3
+bca
+devi1.sh
+file.sh
+[pioneer@localhost ]$ ls | head -3 | tail -1
+file.sh
+[pioneer@localhost ]$ ls | head -3 | tail -1>result
+[pioneer@localhost ]$ cat resultfile.sh
+[pioneer@localhost ]$ cat devi1.sh
+my fav subjects
+C++
+Java Programming
+Php
+Linux
+Unix
+[pioneer@localhost bca]$ cat devi1.sh | grep C++
+C++
+2. Redirection (<, >, >>)
+[pioneer@localhost ]$ ls > file1.sh
+[pioneer@localhost ]$ cat file1.sh
+bca
+devi1.sh
+file.sh
+fm.sh
+[pioneer@localhost ]$ ls>>file1.sh
+[pioneer@localhost ]$ sort<devi1.sh
+C++
+Java Programming
+Linux
+MSaccess
+my fav subjects
+3.tee
+[pioneer@localhost ]$ ls -1 | wc -l | tee devi1.sh
+11
+[pioneer@localhost ]$ cat devi1.sh
+11
